@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>Higher Secondary Percentage Calculator</title>
+
+</head>
+
+<body>
+   <div class="container">
+      <div class="left-col1">
+         <h3>Higher Secondary</h3>
+         <h2> Percentage Calculator</h2>
+      </div>
+      
+      <!------------------------------- Left Column------------------------------------------>
+      <div class="left-col">
+         <div class="left-head">
+            <p>Enter the marks obtained (out of 1020)</p>
+         </div>
+         
+         <input type="number" min="1" max="100" onblur="validateInput(this)" id="en" placeholder="English">
+         <input type="number" min="1" max="100" onblur="validateInput(this)" id="hi" placeholder="Hindi">
+         <input type="number" min="1" max="100" onblur="validateInput(this)" id="ch" placeholder="Chemistry">
+         <input type="number" min="1" max="100" onblur="validateInput(this)" id="ph" placeholder="Physics">
+         <input type="number" min="1" max="100" onblur="validateInput(this)" id="bi" placeholder="Biology">
+         <input type="number" min="1" max="100" onblur="validateInput(this)" id="ma" placeholder="Mathematics">
+         <input type="number" min="1" max="120" onblur="validateInput140(this)" id="cl" placeholder="Chemistry Lab">
+         <input type="number" min="1" max="120" onblur="validateInput140(this)" id="pl" placeholder="Physics Lab">
+         <input type="number" min="1" max="120" onblur="validateInput140(this)" id="bl" placeholder="Biology Lab">
+         <button type="button" onclick="show_result()">Show Result</button>
+      </div>
+      <!-------------------------------------------------------------------------------------->
+      <!------------------------------- Right Column------------------------------------------>
+
+      <div class="result">
+         <h4 id="resultMessage"></h4>
+      </div>
+
+      <div class="right-col">
+         <p>Total Marks : <span class="tot"></span></p>
+         <p>Percentage (%) : <span class="perc"></span></p>
+         <p>Overall Grade :  <span class="grad"></span></p>
+
+      </div>
+      <!-------------------------------------------------------------------------------------->
+
+   </div>
+   <script src="./main.js">
+
+   </script>
+</body>
+
+</html>
